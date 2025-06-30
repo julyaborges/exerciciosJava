@@ -3,10 +3,18 @@ public class ExercicioMat2{
   public static void main(String[] args){
 
     int[][]matriz = new int[3][5];
+    int quantPares = 0;
+    int quantImpares = 0;
 
     for(int i=0; i<3; i++){
       for(int j = 0; j<5; j++){
         matriz[i][j] = (int)(Math.random() * 101);
+
+        if(matriz[i][j] %2 == 0){
+          quantPares++;
+        }else{
+          quantImpares++;
+        }
       }
     }
 
@@ -42,5 +50,8 @@ public class ExercicioMat2{
     }else{
       System.out.println("Não tem repetido");
     }
+
+    System.out.println("Quantidade de numeros pares: "+quantPares);
+    System.out.println("Quantidade de numeros impares: "+quantImpares);
   }
 }
