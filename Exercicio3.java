@@ -4,13 +4,13 @@ public class Exercicio3{
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        double[] valores = new double[10];
-        double maiorValor = 0;
-        double menorValor = 0;
+        int[] valores = new int[10];
+        int maiorValor = 0;
+        int menorValor = 0;
 
        for(int i = 0; i < 10; i++){
         System.out.println("Digite um valor: ");
-        valores[i] = scanner.nextDouble();
+        valores[i] = scanner.nextInt();
 
         if(valores[i] > maiorValor){
             maiorValor = valores[i];

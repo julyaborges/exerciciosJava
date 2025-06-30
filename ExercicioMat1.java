@@ -1,15 +1,13 @@
-import java.util.Scanner;
 import java.util.Random;
 
 public class ExercicioMat1{
 
     public static void main(String[] args){
 
-        double[][] inteiros = new double[5][5]; //Matriz 5x5
-        double somaImpares = 0;
-        double[] somaColu = new double[5];
-        double[] somaLinha = new double[5];
-        Scanner scanner = new Scanner(System.in);
+        int[][] inteiros = new int[5][5]; //Matriz 5x5
+        int somaImpares = 0;
+        int[] somaColu = new int[5];
+        int[] somaLinha = new int[5];
         Random random = new Random();
 
         for (int i = 0; i < 5; i++) {

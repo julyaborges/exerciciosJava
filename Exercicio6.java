@@ -5,18 +5,18 @@ public class Exercicio6{
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
-        double[] vetorA = new double[10];
-        double[] vetorB = new double[10];
-        double[] vetorC = new double[10];
+        int[] vetorA = new int[10];
+        int[] vetorB = new int[10];
+        int[] vetorC = new int[10];
 
         for(int i = 0; i < 10; i++){
             System.out.println("Digite o valor "+(i + 1)+" para o vetor A: ");
-            vetorA[i] = scanner.nextDouble();
+            vetorA[i] = scanner.nextInt();
         }
 
         for(int i = 0; i < 10; i++){
             System.out.println("Digite o valor "+(i + 1)+" para o vetor B: ");
-            vetorB[i] = scanner.nextDouble();
+            vetorB[i] = scanner.nextInt();
         }
 
         for(int i = 0; i < 10; i++){
